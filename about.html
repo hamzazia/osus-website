@@ -1,79 +1,105 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>من نحن | أسس المرافق للأعمال والمقاولات</title>
-  <meta name="description" content="تعرف على شركة أسس المرافق (OSUS ALMRAFIQ)، رؤيتنا، رسالتنا، وأهدافنا الاستراتيجية في تشغيل وصيانة وإدارة المرافق بأيدي مهندسين سعوديين معتمدين وبأعلى معايير الجودة." />
-  
+  <meta name="description"
+    content="تعرف على شركة أسس المرافق (OSUS ALMRAFIQ)، رؤيتنا، رسالتنا، وأهدافنا الاستراتيجية في تشغيل وصيانة وإدارة المرافق بأيدي مهندسين سعوديين معتمدين وبأعلى معايير الجودة." />
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/site-favicon.png" />
-  
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
-  
+
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-[#f1f0ec] text-[#111921] font-sans selection:bg-[#cc9b4c] selection:text-white overflow-x-hidden antialiased flex flex-col gap-4 p-4">
+
+<body
+  class="bg-[#f1f0ec] text-[#111921] font-sans selection:bg-[#cc9b4c] selection:text-white overflow-x-hidden antialiased flex flex-col gap-4 p-4">
 
   <!-- GLOBAL NAVBAR -->
-  <div class="sticky top-[16px] z-50 transition-all duration-300 bg-[#111921]/95 border border-white/10 shadow-lg backdrop-blur-md rounded-[16px] w-full max-w-[1280px] mx-auto">
+  <div
+    class="sticky top-[16px] z-50 transition-all duration-300 bg-[#111921]/95 border border-white/10 shadow-lg backdrop-blur-md rounded-[16px] w-full max-w-[1280px] mx-auto">
     <header id="navbar" class="mx-auto max-w-[1280px] w-full py-4.5 px-4 md:px-6">
       <div class="flex items-center justify-between w-full">
-        
+
         <!-- RIGHT: LOGO -->
         <a href="index.html" class="flex items-center focus:outline-none cursor-pointer">
-          <img src="images/osus%20logo.png" alt="أسس المرافق" class="h-10 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+          <img src="images/osus%20logo.png" alt="أسس المرافق"
+            class="h-10 md:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105" />
         </a>
 
         <!-- CENTER: DESKTOP NAV -->
         <nav class="hidden md:flex items-center gap-1 relative">
-          <a href="index.html" class="relative px-4 py-2 text-sm font-medium transition-colors cursor-pointer rounded-md flex items-center gap-1 text-white/70 hover:text-white hover:bg-white/5">
+          <a href="index.html"
+            class="relative px-4 py-2 text-sm font-medium transition-colors cursor-pointer rounded-md flex items-center gap-1 text-white/70 hover:text-white hover:bg-white/5">
             الرئيسية
           </a>
-          <a href="about.html" class="relative px-4 py-2 text-sm font-medium transition-colors cursor-pointer rounded-md flex items-center gap-1 text-[#cc9b4c] hover:text-white">
+          <a href="about.html"
+            class="relative px-4 py-2 text-sm font-medium transition-colors cursor-pointer rounded-md flex items-center gap-1 text-[#cc9b4c] hover:text-white">
             من نحن
             <div class="absolute bottom-0 left-4 right-4 h-0.5 bg-[#cc9b4c]"></div>
           </a>
-          
+
           <div class="relative">
-            <button id="services-dropdown-toggle" class="relative px-4 py-2 text-sm font-medium transition-colors cursor-pointer rounded-md flex items-center gap-1 text-white/70 hover:text-white hover:bg-white/5 group">
+            <button id="services-dropdown-toggle"
+              class="relative px-4 py-2 text-sm font-medium transition-colors cursor-pointer rounded-md flex items-center gap-1 text-white/70 hover:text-white hover:bg-white/5 group">
               <span>خدماتنا</span>
-              <i id="services-dropdown-chevron" data-lucide="chevron-down" class="h-3.5 w-3.5 text-white/40 group-hover:text-white transition-transform duration-300"></i>
+              <i id="services-dropdown-chevron" data-lucide="chevron-down"
+                class="h-3.5 w-3.5 text-white/40 group-hover:text-white transition-transform duration-300"></i>
             </button>
 
             <!-- Dropdown Box -->
-            <div id="services-dropdown" class="hidden absolute right-0 top-full mt-2 w-72 bg-[#151f29] border border-white/10 rounded-xl overflow-hidden shadow-2xl z-50 py-2 text-right">
-              <a href="services.html#service-1" class="w-full text-right px-4 py-2.5 text-xs text-white/80 hover:text-white hover:bg-[#cc9b4c]/10 transition-colors block border-b border-white/[0.02] last:border-0">خدمات عقود الصيانة</a>
-              <a href="services.html#service-2" class="w-full text-right px-4 py-2.5 text-xs text-white/80 hover:text-white hover:bg-[#cc9b4c]/10 transition-colors block border-b border-white/[0.02] last:border-0">خدمات تنفيذ المشاريع</a>
-              <a href="services.html#service-3" class="w-full text-right px-4 py-2.5 text-xs text-white/80 hover:text-white hover:bg-[#cc9b4c]/10 transition-colors block border-b border-white/[0.02] last:border-0">الاستشارات الهندسية والدراسات الفنية</a>
-              <a href="services.html#service-4" class="w-full text-right px-4 py-2.5 text-xs text-white/80 hover:text-white hover:bg-[#cc9b4c]/10 transition-colors block border-b border-white/[0.02] last:border-0">حلول متكاملة في مجال البنية التحتية والإنشاءات</a>
+            <div id="services-dropdown"
+              class="hidden absolute right-0 top-full mt-2 w-72 bg-[#151f29] border border-white/10 rounded-xl overflow-hidden shadow-2xl z-50 py-2 text-right">
+              <a href="services.html#service-1"
+                class="w-full text-right px-4 py-2.5 text-xs text-white/80 hover:text-white hover:bg-[#cc9b4c]/10 transition-colors block border-b border-white/[0.02] last:border-0">خدمات
+                عقود الصيانة</a>
+              <a href="services.html#service-2"
+                class="w-full text-right px-4 py-2.5 text-xs text-white/80 hover:text-white hover:bg-[#cc9b4c]/10 transition-colors block border-b border-white/[0.02] last:border-0">خدمات
+                تنفيذ المشاريع</a>
+              <a href="services.html#service-3"
+                class="w-full text-right px-4 py-2.5 text-xs text-white/80 hover:text-white hover:bg-[#cc9b4c]/10 transition-colors block border-b border-white/[0.02] last:border-0">الاستشارات
+                الهندسية والدراسات الفنية</a>
+              <a href="services.html#service-4"
+                class="w-full text-right px-4 py-2.5 text-xs text-white/80 hover:text-white hover:bg-[#cc9b4c]/10 transition-colors block border-b border-white/[0.02] last:border-0">حلول
+                متكاملة في مجال البنية التحتية والإنشاءات</a>
             </div>
           </div>
 
-          <a href="faq.html" class="relative px-4 py-2 text-sm font-medium transition-colors cursor-pointer rounded-md flex items-center gap-1 text-white/70 hover:text-white hover:bg-white/5">
+          <a href="faq.html"
+            class="relative px-4 py-2 text-sm font-medium transition-colors cursor-pointer rounded-md flex items-center gap-1 text-white/70 hover:text-white hover:bg-white/5">
             الأسئلة الشائعة
           </a>
-          <a href="contact.html" class="relative px-4 py-2 text-sm font-medium transition-colors cursor-pointer rounded-md flex items-center gap-1 text-white/70 hover:text-white hover:bg-white/5">
+          <a href="contact.html"
+            class="relative px-4 py-2 text-sm font-medium transition-colors cursor-pointer rounded-md flex items-center gap-1 text-white/70 hover:text-white hover:bg-white/5">
             تواصل معنا
           </a>
         </nav>
 
         <!-- LEFT: CTA BUTTON -->
         <div class="hidden md:block">
-          <a href="contact.html" class="border border-white/20 hover:border-white text-white font-medium px-5 py-2.5 rounded-xl text-sm transition-all duration-300 hover:bg-white hover:text-[#111921] select-none inline-block">
+          <a href="contact.html"
+            class="border border-white/20 hover:border-white text-white font-medium px-5 py-2.5 rounded-xl text-sm transition-all duration-300 hover:bg-white hover:text-[#111921] select-none inline-block">
             طلب استشارة مجانية
           </a>
         </div>
 
         <!-- MOBILE MENU TOGGLE BUTTON -->
-        <button id="mobile-menu-toggle" class="md:hidden p-2 text-white/80 hover:text-[#cc9b4c] hover:bg-white/5 rounded-lg transition-colors focus:outline-none cursor-pointer" aria-label="Toggle menu">
+        <button id="mobile-menu-toggle"
+          class="md:hidden p-2 text-white/80 hover:text-[#cc9b4c] hover:bg-white/5 rounded-lg transition-colors focus:outline-none cursor-pointer"
+          aria-label="Toggle menu">
           <i data-lucide="menu" class="h-6 w-6"></i>
         </button>
 
@@ -83,46 +109,63 @@
 
   <!-- MOBILE DRAWER OVERLAY -->
   <div id="mobile-menu-backdrop" class="hidden fixed inset-0 bg-black/70 z-50 md:hidden backdrop-blur-xs"></div>
-  <div id="mobile-menu-drawer" class="fixed top-[16px] right-[16px] bottom-[16px] h-[calc(100vh-32px)] w-80 bg-[#151f29] border border-white/10 z-50 py-8 px-6 shadow-2xl flex flex-col justify-between md:hidden rounded-[16px] translate-x-full transition-transform duration-300">
+  <div id="mobile-menu-drawer"
+    class="fixed top-[16px] right-[16px] bottom-[16px] h-[calc(100vh-32px)] w-80 bg-[#151f29] border border-white/10 z-50 py-8 px-6 shadow-2xl flex flex-col justify-between md:hidden rounded-[16px] translate-x-full transition-transform duration-300">
     <div>
       <div class="flex items-center justify-between border-b border-white/5 pb-6 mb-8">
         <div class="flex items-center gap-2 text-[#cc9b4c]">
           <img src="images/osus%20logo.png" alt="أسس المرافق" class="h-8 w-auto object-contain" />
         </div>
-        <button id="mobile-menu-close" class="p-2 text-white/50 hover:text-[#cc9b4c] hover:bg-white/5 rounded-lg transition-colors cursor-pointer">
+        <button id="mobile-menu-close"
+          class="p-2 text-white/50 hover:text-[#cc9b4c] hover:bg-white/5 rounded-lg transition-colors cursor-pointer">
           <i data-lucide="x" class="h-6 w-6"></i>
         </button>
       </div>
 
       <nav class="flex flex-col gap-2">
-        <a href="index.html" class="flex items-center justify-between w-full text-right px-4 py-3 rounded-lg text-base font-semibold transition-all text-white/70 hover:bg-white/5 hover:text-white">
+        <a href="index.html"
+          class="flex items-center justify-between w-full text-right px-4 py-3 rounded-lg text-base font-semibold transition-all text-white/70 hover:bg-white/5 hover:text-white">
           <span>الرئيسية</span>
           <i data-lucide="chevron-left" class="h-4 w-4 opacity-50"></i>
         </a>
-        <a href="about.html" class="flex items-center justify-between w-full text-right px-4 py-3 rounded-lg text-base font-semibold transition-all bg-[#cc9b4c]/10 text-[#cc9b4c] border-r-4 border-[#cc9b4c]">
+        <a href="about.html"
+          class="flex items-center justify-between w-full text-right px-4 py-3 rounded-lg text-base font-semibold transition-all bg-[#cc9b4c]/10 text-[#cc9b4c] border-r-4 border-[#cc9b4c]">
           <span>من نحن</span>
           <i data-lucide="chevron-left" class="h-4 w-4 opacity-50 text-[#cc9b4c]"></i>
         </a>
-        
+
         <div class="flex flex-col">
-          <button id="mobile-services-toggle" class="flex items-center justify-between w-full text-right px-4 py-3 rounded-lg text-base font-semibold transition-all text-white/70 hover:bg-white/5 hover:text-white">
+          <button id="mobile-services-toggle"
+            class="flex items-center justify-between w-full text-right px-4 py-3 rounded-lg text-base font-semibold transition-all text-white/70 hover:bg-white/5 hover:text-white">
             <span>خدماتنا</span>
-            <i id="mobile-services-chevron" data-lucide="chevron-down" class="h-4 w-4 opacity-70 transition-transform duration-300"></i>
+            <i id="mobile-services-chevron" data-lucide="chevron-down"
+              class="h-4 w-4 opacity-70 transition-transform duration-300"></i>
           </button>
-          
-          <div id="mobile-services-dropdown" class="hidden overflow-hidden mr-4 pr-3 border-r border-[#cc9b4c]/20 flex flex-col gap-1.5 mt-1 transition-all duration-300">
-            <a href="services.html#service-1" class="text-right px-3 py-2 text-xs text-white/75 hover:text-white hover:bg-[#cc9b4c]/10 rounded-md transition-colors block border-b border-white/[0.01]">- خدمات عقود الصيانة</a>
-            <a href="services.html#service-2" class="text-right px-3 py-2 text-xs text-white/75 hover:text-white hover:bg-[#cc9b4c]/10 rounded-md transition-colors block border-b border-white/[0.01]">- خدمات تنفيذ المشاريع</a>
-            <a href="services.html#service-3" class="text-right px-3 py-2 text-xs text-white/75 hover:text-white hover:bg-[#cc9b4c]/10 rounded-md transition-colors block border-b border-white/[0.01]">- الاستشارات الهندسية والدراسات الفنية</a>
-            <a href="services.html#service-4" class="text-right px-3 py-2 text-xs text-white/75 hover:text-white hover:bg-[#cc9b4c]/10 rounded-md transition-colors block border-b border-white/[0.01]">- حلول متكاملة في مجال البنية التحتية والإنشاءات</a>
+
+          <div id="mobile-services-dropdown"
+            class="hidden overflow-hidden mr-4 pr-3 border-r border-[#cc9b4c]/20 flex flex-col gap-1.5 mt-1 transition-all duration-300">
+            <a href="services.html#service-1"
+              class="text-right px-3 py-2 text-xs text-white/75 hover:text-white hover:bg-[#cc9b4c]/10 rounded-md transition-colors block border-b border-white/[0.01]">-
+              خدمات عقود الصيانة</a>
+            <a href="services.html#service-2"
+              class="text-right px-3 py-2 text-xs text-white/75 hover:text-white hover:bg-[#cc9b4c]/10 rounded-md transition-colors block border-b border-white/[0.01]">-
+              خدمات تنفيذ المشاريع</a>
+            <a href="services.html#service-3"
+              class="text-right px-3 py-2 text-xs text-white/75 hover:text-white hover:bg-[#cc9b4c]/10 rounded-md transition-colors block border-b border-white/[0.01]">-
+              الاستشارات الهندسية والدراسات الفنية</a>
+            <a href="services.html#service-4"
+              class="text-right px-3 py-2 text-xs text-white/75 hover:text-white hover:bg-[#cc9b4c]/10 rounded-md transition-colors block border-b border-white/[0.01]">-
+              حلول متكاملة في مجال البنية التحتية والإنشاءات</a>
           </div>
         </div>
 
-        <a href="faq.html" class="flex items-center justify-between w-full text-right px-4 py-3 rounded-lg text-base font-semibold transition-all text-white/70 hover:bg-white/5 hover:text-white">
+        <a href="faq.html"
+          class="flex items-center justify-between w-full text-right px-4 py-3 rounded-lg text-base font-semibold transition-all text-white/70 hover:bg-white/5 hover:text-white">
           <span>الأسئلة الشائعة</span>
           <i data-lucide="chevron-left" class="h-4 w-4 opacity-50"></i>
         </a>
-        <a href="contact.html" class="flex items-center justify-between w-full text-right px-4 py-3 rounded-lg text-base font-semibold transition-all text-white/70 hover:bg-white/5 hover:text-white">
+        <a href="contact.html"
+          class="flex items-center justify-between w-full text-right px-4 py-3 rounded-lg text-base font-semibold transition-all text-white/70 hover:bg-white/5 hover:text-white">
           <span>تواصل معنا</span>
           <i data-lucide="chevron-left" class="h-4 w-4 opacity-50"></i>
         </a>
@@ -130,7 +173,8 @@
     </div>
 
     <div class="border-t border-white/5 pt-6">
-      <a href="contact.html" class="w-full bg-[#cc9b4c] text-[#151f29] font-bold py-3.5 rounded-lg text-center hover:opacity-90 transition-opacity block text-sm select-none">
+      <a href="contact.html"
+        class="w-full bg-[#cc9b4c] text-[#151f29] font-bold py-3.5 rounded-lg text-center hover:opacity-90 transition-opacity block text-sm select-none">
         طلب استشارة مجانية
       </a>
       <p class="text-center text-white/40 text-xs mt-4">
@@ -141,19 +185,16 @@
 
   <!-- MAIN AREA -->
   <main class="min-h-[85vh] w-full max-w-[1280px] mx-auto flex flex-col gap-4">
-    
+
     <!-- PAGE HERO -->
-    <section class="relative flex items-end pb-20 px-4 md:px-6 w-full rounded-[16px] overflow-hidden mt-5" style="min-height: 45vh;">
+    <section class="relative flex items-end pb-20 px-4 md:px-6 w-full rounded-[16px] overflow-hidden mt-5"
+      style="min-height: 45vh;">
       <div class="absolute inset-0 z-0 select-none pointer-events-none">
-        <img
-          src="images/heroBg.jpg"
-          alt="من نحن - أسس المرافق"
-          loading="lazy"
-          class="w-full h-full object-cover filter brightness-[0.4] contrast-[1.05]"
-        />
+        <img src="images/heroBg.jpg" alt="من نحن - أسس المرافق" loading="lazy"
+          class="w-full h-full object-cover filter brightness-[0.4] contrast-[1.05]" />
         <div class="absolute inset-0 bg-[#111921]/80"></div>
       </div>
-      
+
       <div class="relative z-10 max-w-[1280px] mx-auto w-full text-right px-4 md:px-6">
         <!-- Breadcrumb -->
         <div class="flex items-center gap-2 text-white/60 text-xs sm:text-sm mb-4 justify-start">
@@ -163,30 +204,29 @@
           <i data-lucide="chevron-left" class="text-white/40 h-3.5 w-3.5"></i>
           <span class="text-white/80">من نحن</span>
         </div>
-        
+
         <h1 class="text-4xl sm:text-5xl font-extrabold text-white">قصتنا وهويتنا</h1>
         <div class="w-16 h-1.5 bg-[#cc9b4c] mt-5 rounded-full"></div>
       </div>
     </section>
 
     <!-- FULL STORY SECTION -->
-    <section class="w-full bg-white py-16 px-4 md:px-6 relative rounded-[16px] overflow-hidden border border-slate-100 shadow-sm">
+    <section
+      class="w-full bg-white py-16 px-4 md:px-6 relative rounded-[16px] overflow-hidden border border-slate-100 shadow-sm">
       <div class="max-w-[1280px] mx-auto w-full px-4 md:px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
+
           <!-- Right col: Image side -->
           <div class="relative">
-            <div class="rounded-2xl overflow-hidden border border-slate-100 relative shadow-xl w-full" style="aspect-ratio: 4/5;">
-              <img
-                src="images/about_alt.jpg"
-                alt="أسس المرافق للأعمال والمقاولات"
-                class="w-full h-full object-cover"
-              />
+            <div class="rounded-2xl overflow-hidden border border-slate-100 relative shadow-xl w-full"
+              style="aspect-ratio: 4/5;">
+              <img src="images/about_alt.jpg" alt="أسس المرافق للأعمال والمقاولات" class="w-full h-full object-cover" />
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
             </div>
 
             <!-- Achievement Badge -->
-            <div class="absolute -bottom-6 -right-6 bg-[#111921] border border-white/5 text-white rounded-2xl p-6 shadow-2xl w-48 text-right">
+            <div
+              class="absolute -bottom-6 -right-6 bg-[#111921] border border-white/5 text-white rounded-2xl p-6 shadow-2xl w-48 text-right">
               <div class="text-3xl font-extrabold text-[#cc9b4c] font-mono leading-none">١٠٠%</div>
               <div class="text-sm font-bold mt-1 text-white">إدارة وطنية</div>
               <div class="text-xs mt-0.5 opacity-85 text-white/80">بقيادة مهندسين سعوديين</div>
@@ -199,13 +239,16 @@
             <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4 leading-tight">
               نبني الثقة ونقود التطوير والتحول الفني والمؤسسي للمرافق
             </h2>
-            
+
             <p class="text-slate-600 mt-6 leading-8 text-sm sm:text-base">
-              تأسست شركة أسس المرافق (OSUS ALMRAFIQ) بمجلس سعودي هندسي رفيع المستوى، يهدف بشكل أساسي لإيجاد معايير مهنية فاعلة في خدمات التشغيل والصيانة وإدارة المرافق والخدمات الهندسية المساندة.
+              تأسست شركة أسس المرافق (OSUS ALMRAFIQ) بمجلس سعودي هندسي رفيع المستوى، يهدف بشكل أساسي لإيجاد معايير مهنية
+              فاعلة في خدمات التشغيل والصيانة وإدارة المرافق والخدمات الهندسية المساندة.
             </p>
-            
+
             <p class="text-slate-600 mt-4 leading-8 text-sm sm:text-base">
-              خلال العقد المنصرم عملنا جاهدين على بناء مخرجات ملموسة للقطاعات التجارية، ومجمعات السكن الفخمة، والمراكز اللوجستية والحكومية. نتطلع لأن نكون شريك رؤية وطننا الأوحد بتقديم مفهوم هندسي يطهر المشروعات الهندسية من غث الأساليب التقليدية المبرهنة بفشل استباقيتها.
+              خلال العقد المنصرم عملنا جاهدين على بناء مخرجات ملموسة للقطاعات التجارية، ومجمعات السكن الفخمة، والمراكز
+              اللوجستية والحكومية. نتطلع لأن نكون شريك رؤية وطننا الأوحد بتقديم مفهوم هندسي يطهر المشروعات الهندسية من
+              غث الأساليب التقليدية المبرهنة بفشل استباقيتها.
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-8 border-t border-slate-100">
@@ -232,7 +275,8 @@
     </section>
 
     <!-- BENTO 3-CARD GRID: Vision, Mission, Goal -->
-    <section class="w-full bg-slate-50 py-16 px-4 md:px-6 relative rounded-[16px] overflow-hidden border border-slate-100 shadow-sm">
+    <section
+      class="w-full bg-slate-50 py-16 px-4 md:px-6 relative rounded-[16px] overflow-hidden border border-slate-100 shadow-sm">
       <div class="mx-auto max-w-[1280px] px-4 md:px-6">
         <div class="text-center mb-12 max-w-2xl mx-auto">
           <span class="text-[#cc9b4c] text-sm font-bold tracking-widest uppercase">روافد هويتنا</span>
@@ -240,37 +284,46 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
+
           <!-- Card 1 - Vision -->
-          <div class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/50 rounded-2xl p-8 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col items-start text-right">
-            <div class="w-12 h-12 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/20 flex items-center justify-center text-[#cc9b4c] mb-6">
+          <div
+            class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/50 rounded-2xl p-8 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col items-start text-right">
+            <div
+              class="w-12 h-12 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/20 flex items-center justify-center text-[#cc9b4c] mb-6">
               <i data-lucide="eye" class="h-6 w-6"></i>
             </div>
             <h3 class="text-xl font-bold text-slate-800 mb-4">رؤيتنا المستدامة</h3>
             <p class="text-slate-600 text-sm leading-7">
-              تحقيق الريادة والجاهزية القصوى في قطاع إدارة التشغيل بالمملكة العربية السعودية، ومحاكاة الحلول العالمية في دمج التقنية للمرافق لبناء واقع عمراني مميز يستقبل رؤية المملكة ٢٠٣٠ بفخر واحترافية.
+              تحقيق الريادة والجاهزية القصوى في قطاع إدارة التشغيل بالمملكة العربية السعودية، ومحاكاة الحلول العالمية في
+              دمج التقنية للمرافق لبناء واقع عمراني مميز يستقبل رؤية المملكة ٢٠٣٠ بفخر واحترافية.
             </p>
           </div>
 
           <!-- Card 2 - Mission -->
-          <div class="bg-[#111921] border border-white/5 hover:border-[#cc9b4c]/50 rounded-2xl p-8 transition-all duration-300 shadow-xl flex flex-col items-start text-right">
-            <div class="w-12 h-12 rounded-xl bg-[#cc9b4c]/20 border border-[#cc9b4c]/40 flex items-center justify-center text-[#cc9b4c] mb-6">
+          <div
+            class="bg-[#111921] border border-white/5 hover:border-[#cc9b4c]/50 rounded-2xl p-8 transition-all duration-300 shadow-xl flex flex-col items-start text-right">
+            <div
+              class="w-12 h-12 rounded-xl bg-[#cc9b4c]/20 border border-[#cc9b4c]/40 flex items-center justify-center text-[#cc9b4c] mb-6">
               <i data-lucide="target" class="h-6 w-6"></i>
             </div>
             <h3 class="text-xl font-bold text-white mb-4">رسالتنا الفعالة</h3>
             <p class="text-white/70 text-sm leading-7">
-              تقديم خدمات تشغيل وصيانة مبتكرة تحقق الاستدامة المطلقة للعقارات والمرافق العامة والخاصة، وبناء ثقافة شراكة متوازنة تكفل لعملائنا الحفاظ الذهبي على أصولهم وتقليل مشاكل البنى التحتية الحيوية.
+              تقديم خدمات تشغيل وصيانة مبتكرة تحقق الاستدامة المطلقة للعقارات والمرافق العامة والخاصة، وبناء ثقافة شراكة
+              متوازنة تكفل لعملائنا الحفاظ الذهبي على أصولهم وتقليل مشاكل البنى التحتية الحيوية.
             </p>
           </div>
 
           <!-- Card 3 - Goal -->
-          <div class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/50 rounded-2xl p-8 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col items-start text-right">
-            <div class="w-12 h-12 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/20 flex items-center justify-center text-[#cc9b4c] mb-6">
+          <div
+            class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/50 rounded-2xl p-8 transition-all duration-300 shadow-md hover:shadow-lg flex flex-col items-start text-right">
+            <div
+              class="w-12 h-12 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/20 flex items-center justify-center text-[#cc9b4c] mb-6">
               <i data-lucide="shield-check" class="h-6 w-6"></i>
             </div>
             <h3 class="text-xl font-bold text-slate-800 mb-4">أهدافنا الاستراتيجية</h3>
             <p class="text-slate-600 text-sm leading-7">
-              تصميم حزم تشغيل مرنة، وترقية مستوى الأمان والسلامة، وتوطين الكفاءات الهندسية، مع تأسيس مراقبة رقمية ترتكز على تلمس وتحليل المشاكل الكترونياً قبل تفاقمها للحد من اضطراب سير الأعمال.
+              تصميم حزم تشغيل مرنة، وترقية مستوى الأمان والسلامة، وتوطين الكفاءات الهندسية، مع تأسيس مراقبة رقمية ترتكز
+              على تلمس وتحليل المشاكل الكترونياً قبل تفاقمها للحد من اضطراب سير الأعمال.
             </p>
           </div>
 
@@ -279,67 +332,84 @@
     </section>
 
     <!-- VALUES 5-CARD GRID -->
-    <section class="w-full bg-white py-16 px-4 md:px-6 relative rounded-[16px] overflow-hidden border border-slate-100 shadow-sm">
+    <section
+      class="w-full bg-white py-16 px-4 md:px-6 relative rounded-[16px] overflow-hidden border border-slate-100 shadow-sm">
       <div class="mx-auto max-w-[1280px] px-4 md:px-6">
         <div class="text-center mb-12 max-w-2xl mx-auto">
           <span class="text-[#cc9b4c] text-sm font-bold tracking-widest uppercase">المحاور الخمسة</span>
           <h2 class="text-3xl font-extrabold text-slate-900 mt-3">القيم التي ندين بها ونطبقها في عملنا</h2>
-          <p class="text-slate-500 text-xs sm:text-sm mt-3">أثرنا المهني نستمده من تطبيق وثيق لهذه الركائز بجميع أعمالنا اليومية.</p>
+          <p class="text-slate-500 text-xs sm:text-sm mt-3">أثرنا المهني نستمده من تطبيق وثيق لهذه الركائز بجميع أعمالنا
+            اليومية.</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           <!-- Value 1 -->
-          <div class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/45 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg text-right flex flex-col justify-between">
+          <div
+            class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/45 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg text-right flex flex-col justify-between">
             <div>
-              <div class="w-10 h-10 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/25 flex items-center justify-center mb-5 flex-shrink-0">
+              <div
+                class="w-10 h-10 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/25 flex items-center justify-center mb-5 flex-shrink-0">
                 <i data-lucide="shield-check" class="h-6 w-6 text-[#cc9b4c]"></i>
               </div>
               <h4 class="font-bold text-slate-800 text-base mb-3 transition-colors">النزاهة والشفافية</h4>
-              <p class="text-slate-500 text-xs leading-6">نضمن لشركائنا الوضوح الكامل في التكاليف والتعامل بمصداقية مطلقة في التقارير الإنشائية والمالية.</p>
+              <p class="text-slate-500 text-xs leading-6">نضمن لشركائنا الوضوح الكامل في التكاليف والتعامل بمصداقية
+                مطلقة في التقارير الإنشائية والمالية.</p>
             </div>
           </div>
-          
+
           <!-- Value 2 -->
-          <div class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/45 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg text-right flex flex-col justify-between">
+          <div
+            class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/45 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg text-right flex flex-col justify-between">
             <div>
-              <div class="w-10 h-10 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/25 flex items-center justify-center mb-5 flex-shrink-0">
+              <div
+                class="w-10 h-10 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/25 flex items-center justify-center mb-5 flex-shrink-0">
                 <i data-lucide="target" class="h-6 w-6 text-[#cc9b4c]"></i>
               </div>
               <h4 class="font-bold text-slate-800 text-base mb-3 transition-colors">الكفاءة المستدامة</h4>
-              <p class="text-slate-500 text-xs leading-6">نطبق معايير متقدمة تسعى لرفع الكفاءة التشغيلية للأصول مع تقليل مستويات الاستهلاك والهدر غير المرغوب.</p>
+              <p class="text-slate-500 text-xs leading-6">نطبق معايير متقدمة تسعى لرفع الكفاءة التشغيلية للأصول مع تقليل
+                مستويات الاستهلاك والهدر غير المرغوب.</p>
             </div>
           </div>
-          
+
           <!-- Value 3 -->
-          <div class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/45 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg text-right flex flex-col justify-between">
+          <div
+            class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/45 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg text-right flex flex-col justify-between">
             <div>
-              <div class="w-10 h-10 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/25 flex items-center justify-center mb-5 flex-shrink-0">
+              <div
+                class="w-10 h-10 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/25 flex items-center justify-center mb-5 flex-shrink-0">
                 <i data-lucide="award" class="h-6 w-6 text-[#cc9b4c]"></i>
               </div>
               <h4 class="font-bold text-slate-800 text-base mb-3 transition-colors">الابتكار التكنولوجي</h4>
-              <p class="text-slate-500 text-xs leading-6">نوفر أنظمة تحكم وصيانة ذكية استباقية تسهم في رصد الأخطاء وتقليل فترات الأعطال المفاجئة.</p>
+              <p class="text-slate-500 text-xs leading-6">نوفر أنظمة تحكم وصيانة ذكية استباقية تسهم في رصد الأخطاء
+                وتقليل فترات الأعطال المفاجئة.</p>
             </div>
           </div>
-          
+
           <!-- Value 4 -->
-          <div class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/45 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg text-right flex flex-col justify-between">
+          <div
+            class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/45 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg text-right flex flex-col justify-between">
             <div>
-              <div class="w-10 h-10 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/25 flex items-center justify-center mb-5 flex-shrink-0">
+              <div
+                class="w-10 h-10 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/25 flex items-center justify-center mb-5 flex-shrink-0">
                 <i data-lucide="heart" class="h-6 w-6 text-[#cc9b4c]"></i>
               </div>
               <h4 class="font-bold text-slate-800 text-base mb-3 transition-colors">الالتزام التام والسرعة</h4>
-              <p class="text-slate-500 text-xs leading-6">نلتزم بجداول العمل والخدمات مع سرعة استجابة على مدار الساعة لمعالجة الحالات الفنية الطارئة.</p>
+              <p class="text-slate-500 text-xs leading-6">نلتزم بجداول العمل والخدمات مع سرعة استجابة على مدار الساعة
+                لمعالجة الحالات الفنية الطارئة.</p>
             </div>
           </div>
-          
+
           <!-- Value 5 -->
-          <div class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/45 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg text-right flex flex-col justify-between">
+          <div
+            class="bg-white border border-slate-200/80 hover:border-[#cc9b4c]/45 rounded-2xl p-6 transition-all duration-300 hover:shadow-lg text-right flex flex-col justify-between">
             <div>
-              <div class="w-10 h-10 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/25 flex items-center justify-center mb-5 flex-shrink-0">
+              <div
+                class="w-10 h-10 rounded-xl bg-[#cc9b4c]/10 border border-[#cc9b4c]/25 flex items-center justify-center mb-5 flex-shrink-0">
                 <i data-lucide="eye" class="h-6 w-6 text-[#cc9b4c]"></i>
               </div>
               <h4 class="font-bold text-slate-800 text-base mb-3 transition-colors">الجودة السعودية المعتمدة</h4>
-              <p class="text-slate-500 text-xs leading-6">نعتمد على الكفاءات الهندسية الوطنية ونطبق اللوائح السعودية والمعايير الهندسية الدولية الإجرائية.</p>
+              <p class="text-slate-500 text-xs leading-6">نعتمد على الكفاءات الهندسية الوطنية ونطبق اللوائح السعودية
+                والمعايير الهندسية الدولية الإجرائية.</p>
             </div>
           </div>
         </div>
@@ -349,73 +419,105 @@
   </main>
 
   <!-- GLOBAL FOOTER -->
-  <footer id="footer" class="bg-[#151f29] rounded-[16px] border border-white/10 pt-24 pb-12 relative overflow-hidden w-full max-w-[1280px] mx-auto mt-4">
-    
+  <footer id="footer"
+    class="bg-[#151f29] rounded-[16px] border border-white/10 pt-24 relative overflow-hidden w-full max-w-[1280px] mx-auto mt-4"
+    style="padding-bottom: 0px;">
+
     <!-- Background visual touches -->
     <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#cc9b4c]/3 rounded-full blur-[120px] pointer-events-none"></div>
     <div class="absolute top-0 left-0 w-80 h-80 bg-[#cc9b4c]/2 rounded-full blur-[100px] pointer-events-none"></div>
 
     <div class="max-w-[1280px] mx-auto px-6 relative z-10">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-        
+
         <!-- Column 1 - Brand Info -->
         <div class="flex flex-col items-start text-right">
           <div class="flex items-center gap-2 text-[#cc9b4c] mb-6">
             <img src="images/osus%20logo.png" alt="أسس المرافق" class="h-10 w-auto object-contain" />
           </div>
-          
+
           <p class="text-white/55 text-sm leading-7 mb-6 max-w-sm">
-            شركة سعودية رائدة متخصصة في إدارة وصيانة المرافق بأعلى معايير الجودة العالمية، نسعى لاستدامة منشآتكم وتحقيق رؤية وطننا الطموح.
+            شركة سعودية رائدة متخصصة في إدارة وصيانة المرافق بأعلى معايير الجودة العالمية، نسعى لاستدامة منشآتكم وتحقيق
+            رؤية وطننا الطموح.
           </p>
-          
+
           <div class="flex items-center gap-3">
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter" class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white/50 hover:border-[#cc9b4c] hover:text-[#cc9b4c] hover:bg-[#cc9b4c]/5 transition-all duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter"
+              class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white/50 hover:border-[#cc9b4c] hover:text-[#cc9b4c] hover:bg-[#cc9b4c]/5 transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="Linkedin" class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white/50 hover:border-[#cc9b4c] hover:text-[#cc9b4c] hover:bg-[#cc9b4c]/5 transition-all duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="Linkedin"
+              class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white/50 hover:border-[#cc9b4c] hover:text-[#cc9b4c] hover:bg-[#cc9b4c]/5 transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram" class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white/50 hover:border-[#cc9b4c] hover:text-[#cc9b4c] hover:bg-[#cc9b4c]/5 transition-all duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"
+              class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white/50 hover:border-[#cc9b4c] hover:text-[#cc9b4c] hover:bg-[#cc9b4c]/5 transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="Youtube" class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white/50 hover:border-[#cc9b4c] hover:text-[#cc9b4c] hover:bg-[#cc9b4c]/5 transition-all duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z"/><polygon points="10 15 15 12 10 9"/></svg>
+            <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="Youtube"
+              class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-white/50 hover:border-[#cc9b4c] hover:text-[#cc9b4c] hover:bg-[#cc9b4c]/5 transition-all duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+                <path
+                  d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17z" />
+                <polygon points="10 15 15 12 10 9" />
+              </svg>
             </a>
           </div>
         </div>
 
         <!-- Column 2 - Quick Links -->
         <div class="flex flex-col items-start text-right">
-          <h4 class="text-white font-bold mb-6 text-sm tracking-wider relative after:content-[''] after:absolute after:bottom-[-8px] after:right-0 after:w-10 after:h-[2px] after:bg-[#cc9b4c]">
+          <h4
+            class="text-white font-bold mb-6 text-sm tracking-wider relative after:content-[''] after:absolute after:bottom-[-8px] after:right-0 after:w-10 after:h-[2px] after:bg-[#cc9b4c]">
             روابط سريعة
           </h4>
-          <ul class="space-y-4">
+          <ul class="space-y-4" style="margin-top: 24px;">
             <li>
-              <a href="index.html" class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 cursor-pointer text-right flex items-center gap-2 group">
+              <a href="index.html"
+                class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 cursor-pointer text-right flex items-center gap-2 group">
                 <span class="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#cc9b4c] transition-colors"></span>
                 الرئيسية
               </a>
             </li>
             <li>
-              <a href="about.html" class="text-[#cc9b4c] hover:text-[#cc9b4c] text-sm transition-colors duration-200 cursor-pointer text-right flex items-center gap-2 group">
+              <a href="about.html"
+                class="text-[#cc9b4c] hover:text-[#cc9b4c] text-sm transition-colors duration-200 cursor-pointer text-right flex items-center gap-2 group">
                 <span class="w-1.5 h-1.5 rounded-full bg-[#cc9b4c] transition-colors"></span>
                 من نحن
               </a>
             </li>
             <li>
-              <a href="services.html" class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 cursor-pointer text-right flex items-center gap-2 group">
+              <a href="services.html"
+                class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 cursor-pointer text-right flex items-center gap-2 group">
                 <span class="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#cc9b4c] transition-colors"></span>
                 خدماتنا
               </a>
             </li>
             <li>
-              <a href="faq.html" class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 cursor-pointer text-right flex items-center gap-2 group">
+              <a href="faq.html"
+                class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 cursor-pointer text-right flex items-center gap-2 group">
                 <span class="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#cc9b4c] transition-colors"></span>
                 الأسئلة الشائعة
               </a>
             </li>
             <li>
-              <a href="contact.html" class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 cursor-pointer text-right flex items-center gap-2 group">
+              <a href="contact.html"
+                class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 cursor-pointer text-right flex items-center gap-2 group">
                 <span class="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#cc9b4c] transition-colors"></span>
                 اتصل بنا
               </a>
@@ -425,30 +527,35 @@
 
         <!-- Column 3 - Our Services -->
         <div class="flex flex-col items-start text-right">
-          <h4 class="text-white font-bold mb-6 text-sm tracking-wider relative after:content-[''] after:absolute after:bottom-[-8px] after:right-0 after:w-10 after:h-[2px] after:bg-[#cc9b4c]">
+          <h4
+            class="text-white font-bold mb-6 text-sm tracking-wider relative after:content-[''] after:absolute after:bottom-[-8px] after:right-0 after:w-10 after:h-[2px] after:bg-[#cc9b4c]">
             خدماتنا الرئيسية
           </h4>
-          <ul class="space-y-4">
+          <ul class="space-y-4" style="margin-top: 24px;">
             <li>
-              <a href="services.html#service-1" class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 text-right flex items-center gap-2 group">
+              <a href="services.html#service-1"
+                class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 text-right flex items-center gap-2 group">
                 <span class="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#cc9b4c] transition-colors"></span>
                 خدمات عقود الصيانة
               </a>
             </li>
             <li>
-              <a href="services.html#service-2" class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 text-right flex items-center gap-2 group">
+              <a href="services.html#service-2"
+                class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 text-right flex items-center gap-2 group">
                 <span class="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#cc9b4c] transition-colors"></span>
                 خدمات تنفيذ المشاريع
               </a>
             </li>
             <li>
-              <a href="services.html#service-3" class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 text-right flex items-center gap-2 group">
+              <a href="services.html#service-3"
+                class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 text-right flex items-center gap-2 group">
                 <span class="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#cc9b4c] transition-colors"></span>
                 الاستشارات الهندسية والدراسات الفنية
               </a>
             </li>
             <li>
-              <a href="services.html#service-4" class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 text-right flex items-center gap-2 group">
+              <a href="services.html#service-4"
+                class="text-white/60 hover:text-[#cc9b4c] text-sm transition-colors duration-200 text-right flex items-center gap-2 group">
                 <span class="w-1.5 h-1.5 rounded-full bg-white/20 group-hover:bg-[#cc9b4c] transition-colors"></span>
                 حلول متكاملة في مجال البنية التحتية والإنشاءات
               </a>
@@ -458,20 +565,33 @@
 
         <!-- Column 4 - Contact Info -->
         <div class="flex flex-col items-start text-right">
-          <h4 class="text-white font-bold mb-6 text-sm tracking-wider relative after:content-[''] after:absolute after:bottom-[-8px] after:right-0 after:w-10 after:h-[2px] after:bg-[#cc9b4c]">
+          <h4
+            class="text-white font-bold mb-6 text-sm tracking-wider relative after:content-[''] after:absolute after:bottom-[-8px] after:right-0 after:w-10 after:h-[2px] after:bg-[#cc9b4c]">
             اتصل بنا
           </h4>
-          <div class="space-y-4 w-full">
-            <a href="tel:+966550065316" class="flex items-start gap-3 text-white/60 hover:text-[#cc9b4c] transition-colors duration-200 text-right group">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#cc9b4c] h-5 w-5 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div class="space-y-4 w-full" style="margin-top: 24px;">
+            <a href="tel:+966550065316"
+              class="flex items-start gap-3 text-white/60 hover:text-[#cc9b4c] transition-colors duration-200 text-right group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-[#cc9b4c] h-5 w-5 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
               <div class="flex flex-col">
                 <span class="text-xs text-white/40">الهاتف (الدعم والخدمات)</span>
                 <span class="text-sm font-semibold dir-ltr block text-right">+966 55 006 5316</span>
               </div>
             </a>
 
-            <a href="mailto:info@osus-almrafiq.com" class="flex items-start gap-3 text-white/60 hover:text-[#cc9b4c] transition-colors duration-200 text-right group">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#cc9b4c] h-5 w-5 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <a href="mailto:info@osus-almrafiq.com"
+              class="flex items-start gap-3 text-white/60 hover:text-[#cc9b4c] transition-colors duration-200 text-right group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-[#cc9b4c] h-5 w-5 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
               <div class="flex flex-col">
                 <span class="text-xs text-white/40">البريد الإلكتروني المباشر</span>
                 <span class="text-sm break-all font-semibold">info@osus-almrafiq.com</span>
@@ -479,7 +599,12 @@
             </a>
 
             <div class="flex items-start gap-3 text-white/60 text-right">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#cc9b4c] h-5 w-5 mt-0.5 flex-shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="text-[#cc9b4c] h-5 w-5 mt-0.5 flex-shrink-0">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
               <div class="flex flex-col">
                 <span class="text-xs text-white/40">المقر الرئيسي</span>
                 <span class="text-sm font-semibold">الرياض، المملكة العربية السعودية</span>
@@ -491,14 +616,9 @@
       </div>
 
       <!-- Bottom Bar -->
-      <div class="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-white/45 text-xs text-center md:text-right">
-        <div>
-          <p>© 2025 أسس المرافق للأعمال والمقاولات. جميع الحقوق محفوظة.</p>
-        </div>
-        <div class="flex items-center gap-2">
-          <span>مصنوع بعناية فائقة في المملكة العربية السعودية</span>
-          <span class="inline-block w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse" title="التشغيل نشط"></span>
-        </div>
+      <div class="border-t border-white/10 mt-16 flex justify-center items-center text-white/45 text-xs text-center"
+        style="padding-top: 16px; padding-bottom: 16px;">
+        <p>© 2026 أسس المرافق جميع الحقوق محفوظة.</p>
       </div>
 
     </div>
@@ -511,4 +631,5 @@
     lucide.createIcons();
   </script>
 </body>
+
 </html>
